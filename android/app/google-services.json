@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "54668765287",
+    "project_id": "arkenergy-5ea5e",
+    "storage_bucket": "arkenergy-5ea5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54668765287:android:866efde282b0fbdb57ccc2",
+        "android_client_info": {
+          "package_name": "com.arkenergy.bylewin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr5rgYwkP54WwMNLoV74eBXb35LArxebU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

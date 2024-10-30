@@ -1,0 +1,1 @@
+ /Users/lewinmuzvonda/arkenergyapp/.dart_tool/flutter_build/4900be304f30d622f05fb3f088bf3b8c/native_assets.yaml: 

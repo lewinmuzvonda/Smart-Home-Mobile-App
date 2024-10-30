@@ -1,0 +1,4 @@
+#Wed Oct 30 03:06:11 GST 2024
+base.0=/Users/lewinmuzvonda/arkenergyapp/build/app/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+path.0=0/classes.dex
+renamed.0=classes.dex

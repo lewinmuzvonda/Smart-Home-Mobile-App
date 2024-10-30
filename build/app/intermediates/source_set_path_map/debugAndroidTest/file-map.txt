@@ -1,0 +1,4 @@
+com.arkenergy.bylewin.test.app-androidTest-0 /Users/lewinmuzvonda/arkenergyapp/build/app/generated/res/resValues/androidTest/debug
+com.arkenergy.bylewin.test.app-mergeDebugAndroidTestResources-1 /Users/lewinmuzvonda/arkenergyapp/build/app/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.arkenergy.bylewin.test.app-mergeDebugAndroidTestResources-2 /Users/lewinmuzvonda/arkenergyapp/build/app/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.arkenergy.bylewin.test.app-merged_res-3 /Users/lewinmuzvonda/arkenergyapp/build/app/intermediates/merged_res/debugAndroidTest

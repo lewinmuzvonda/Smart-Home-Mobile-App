@@ -1,0 +1,412 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.arkenergy.bylewin"
+4    android:versionCode="1"
+5    android:versionName="0.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package-visibility and
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:40:5-45:15
+18        <intent>
+18-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:41:9-44:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:42:13-72
+19-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:42:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:43:13-50
+21-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:43:19-48
+22        </intent>
+23    </queries>
+24
+25    <uses-permission android:name="android.permission.INTERNET" />
+25-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:7:5-67
+25-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:7:22-64
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:8:5-68
+26-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:8:22-65
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+27-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+27-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+28    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+28-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:5-77
+28-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:11:22-74
+29    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+29-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:26:5-82
+29-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:26:22-79
+30
+31    <permission
+31-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+32        android:name="com.arkenergy.bylewin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.arkenergy.bylewin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+36
+37    <application
+38        android:name="android.app.Application"
+38-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:4:9-42
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.13.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/c666c258fca39b3353b46678a6b928ab/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+40        android:extractNativeLibs="true"
+41        android:icon="@mipmap/ic_launcher"
+41-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:5:9-43
+42        android:label="ArkEnergy"
+42-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:3:9-34
+43        android:usesCleartextTraffic="true" >
+43-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:6:9-44
+44        <activity
+44-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:7:9-28:20
+45            android:name="com.arkenergy.bylewin.MainActivity"
+45-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:8:13-41
+46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+46-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:13:13-163
+47            android:exported="true"
+47-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:9:13-36
+48            android:hardwareAccelerated="true"
+48-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:14:13-47
+49            android:launchMode="singleTop"
+49-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:10:13-43
+50            android:taskAffinity=""
+50-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:11:13-36
+51            android:theme="@style/LaunchTheme"
+51-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:12:13-47
+52            android:windowSoftInputMode="adjustResize" >
+52-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:15:13-55
+53
+54            <!--
+55                 Specifies an Android theme to apply to this Activity as soon as
+56                 the Android process has started. This theme is visible to the user
+57                 while the Flutter UI initializes. After that, this theme continues
+58                 to determine the Window background behind the Flutter UI.
+59            -->
+60            <meta-data
+60-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:20:13-23:17
+61                android:name="io.flutter.embedding.android.NormalTheme"
+61-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:21:15-70
+62                android:resource="@style/NormalTheme" />
+62-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:22:15-52
+63
+64            <intent-filter>
+64-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:24:13-27:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:25:17-68
+65-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:25:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:26:17-76
+67-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:26:27-74
+68            </intent-filter>
+69        </activity>
+70        <!--
+71             Don't delete the meta-data below.
+72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+73        -->
+74        <meta-data
+74-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:31:9-33:33
+75            android:name="flutterEmbedding"
+75-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:32:13-44
+76            android:value="2" />
+76-->/Users/lewinmuzvonda/arkenergyapp/android/app/src/main/AndroidManifest.xml:33:13-30
+77
+78        <service
+78-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-17:72
+79            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+79-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-107
+80            android:exported="false"
+80-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-37
+81            android:permission="android.permission.BIND_JOB_SERVICE" />
+81-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-69
+82        <service
+82-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-24:19
+83            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+83-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-97
+84            android:exported="false" >
+84-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-37
+85            <intent-filter>
+85-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
+86                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+86-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
+86-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
+87            </intent-filter>
+88        </service>
+89
+90        <receiver
+90-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:26:9-33:20
+91            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+91-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-98
+92            android:exported="true"
+92-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:28:13-36
+93            android:permission="com.google.android.c2dm.permission.SEND" >
+93-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-73
+94            <intent-filter>
+94-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
+95                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+95-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
+95-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
+96            </intent-filter>
+97        </receiver>
+98
+99        <service
+99-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-39:19
+100            android:name="com.google.firebase.components.ComponentDiscoveryService"
+100-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:35:18-89
+101            android:directBootAware="true"
+101-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:32:13-43
+102            android:exported="false" >
+102-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:56:13-37
+103            <meta-data
+103-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-38:85
+104                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+104-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:37:17-128
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:38:17-82
+106            <meta-data
+106-->[:firebase_core] /Users/lewinmuzvonda/arkenergyapp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:9:13-11:85
+107                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+107-->[:firebase_core] /Users/lewinmuzvonda/arkenergyapp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:10:17-124
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[:firebase_core] /Users/lewinmuzvonda/arkenergyapp/build/firebase_core/intermediates/merged_manifest/release/AndroidManifest.xml:11:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:57:13-59:85
+110                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+110-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:58:17-122
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:59:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:60:13-62:85
+113                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+113-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:61:17-119
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:62:17-82
+115            <meta-data
+115-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:15:13-17:85
+116                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+116-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:16:17-130
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:17:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:18:13-20:85
+119                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+119-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:19:17-127
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-installations:18.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/8301937e2a7dc5f887952c224214a568/transformed/jetified-firebase-installations-18.0.0/AndroidManifest.xml:20:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/de1f68a58916d382e87cebe6de5ae38f/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:12:13-14:85
+122                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+122-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/de1f68a58916d382e87cebe6de5ae38f/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:13:17-116
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-common-ktx:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/de1f68a58916d382e87cebe6de5ae38f/transformed/jetified-firebase-common-ktx-21.0.0/AndroidManifest.xml:14:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:35:13-37:85
+125                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+125-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:36:17-109
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:37:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/636536ee7608b1ae673f2bf93e875eef/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:25:13-27:85
+128                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+128-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/636536ee7608b1ae673f2bf93e875eef/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:26:17-115
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-datatransport:18.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/636536ee7608b1ae673f2bf93e875eef/transformed/jetified-firebase-datatransport-18.2.0/AndroidManifest.xml:27:17-82
+130        </service>
+131
+132        <provider
+132-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:41:9-45:38
+133            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+133-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:42:13-102
+134            android:authorities="com.arkenergy.bylewin.flutterfirebasemessaginginitprovider"
+134-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:43:13-88
+135            android:exported="false"
+135-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:44:13-37
+136            android:initOrder="99" />
+136-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:45:13-35
+137
+138        <receiver
+138-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:29:9-40:20
+139            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+139-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:30:13-78
+140            android:exported="true"
+140-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:31:13-36
+141            android:permission="com.google.android.c2dm.permission.SEND" >
+141-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:32:13-73
+142            <intent-filter>
+142-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-32:29
+143                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+143-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:17-81
+143-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:31:25-78
+144            </intent-filter>
+145
+146            <meta-data
+146-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:37:13-39:40
+147                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+147-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:38:17-92
+148                android:value="true" />
+148-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:39:17-37
+149        </receiver>
+150        <!--
+151             FirebaseMessagingService performs security checks at runtime,
+152             but set to not exported to explicitly avoid allowing another app to call it.
+153        -->
+154        <service
+154-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:46:9-53:19
+155            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+155-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:47:13-82
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:48:13-43
+157            android:exported="false" >
+157-->[com.google.firebase:firebase-messaging:24.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/12112c2a696148a3fa1e1fad7c89bad8/transformed/jetified-firebase-messaging-24.0.1/AndroidManifest.xml:49:13-37
+158            <intent-filter android:priority="-500" >
+158-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-23:29
+159                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+159-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-78
+159-->[:firebase_messaging] /Users/lewinmuzvonda/arkenergyapp/build/firebase_messaging/intermediates/merged_manifest/release/AndroidManifest.xml:22:25-75
+160            </intent-filter>
+161        </service>
+162
+163        <activity
+163-->[com.google.android.gms:play-services-base:18.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/6dadd0bfa2d44ddeab91e958645034df/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+164            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+164-->[com.google.android.gms:play-services-base:18.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/6dadd0bfa2d44ddeab91e958645034df/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+165            android:exported="false"
+165-->[com.google.android.gms:play-services-base:18.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/6dadd0bfa2d44ddeab91e958645034df/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+166            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+166-->[com.google.android.gms:play-services-base:18.0.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/6dadd0bfa2d44ddeab91e958645034df/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+167
+168        <provider
+168-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:23:9-28:39
+169            android:name="com.google.firebase.provider.FirebaseInitProvider"
+169-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:24:13-77
+170            android:authorities="com.arkenergy.bylewin.firebaseinitprovider"
+170-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:25:13-72
+171            android:directBootAware="true"
+171-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:26:13-43
+172            android:exported="false"
+172-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:27:13-37
+173            android:initOrder="100" />
+173-->[com.google.firebase:firebase-common:21.0.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/abd144767df15dffddd52de2fe329b95/transformed/jetified-firebase-common-21.0.0/AndroidManifest.xml:28:13-36
+174
+175        <uses-library
+175-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+176            android:name="androidx.window.extensions"
+176-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+177            android:required="false" />
+177-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+178        <uses-library
+178-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+179            android:name="androidx.window.sidecar"
+179-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+180            android:required="false" />
+180-->[androidx.window:window:1.2.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/3e108fe9d597d03770ae82acaebb5b63/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+181
+182        <meta-data
+182-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/96004e15647bc525170b7742251f128d/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+183            android:name="com.google.android.gms.version"
+183-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/96004e15647bc525170b7742251f128d/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+184            android:value="@integer/google_play_services_version" />
+184-->[com.google.android.gms:play-services-basement:18.3.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/96004e15647bc525170b7742251f128d/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+185
+186        <provider
+186-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+187            android:name="androidx.startup.InitializationProvider"
+187-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:25:13-67
+188            android:authorities="com.arkenergy.bylewin.androidx-startup"
+188-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:26:13-68
+189            android:exported="false" >
+189-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:27:13-37
+190            <meta-data
+190-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+191                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+191-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+192                android:value="androidx.startup" />
+192-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/lewinmuzvonda/.gradle/caches/transforms-3/5d9083683aa46ad6646ca7a884bd56df/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+193            <meta-data
+193-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+194                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+194-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+195                android:value="androidx.startup" />
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+196        </provider>
+197
+198        <receiver
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+199            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+200            android:directBootAware="false"
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+201            android:enabled="true"
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+202            android:exported="true"
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+203            android:permission="android.permission.DUMP" >
+203-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+205                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+208                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+209            </intent-filter>
+210            <intent-filter>
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+211                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+212            </intent-filter>
+213            <intent-filter>
+213-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+214                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+214-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/lewinmuzvonda/.gradle/caches/transforms-3/1e1e8719823df11c58e964840aa823f6/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+215            </intent-filter>
+216        </receiver>
+217
+218        <service
+218-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:28:9-34:19
+219            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+219-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:29:13-103
+220            android:exported="false" >
+220-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:30:13-37
+221            <meta-data
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:31:13-33:39
+222                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:32:17-94
+223                android:value="cct" />
+223-->[com.google.android.datatransport:transport-backend-cct:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/49139f909feaf4197e9a8719ee8d0c41/transformed/jetified-transport-backend-cct-3.1.9/AndroidManifest.xml:33:17-36
+224        </service>
+225        <service
+225-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:26:9-30:19
+226            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+226-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:27:13-117
+227            android:exported="false"
+227-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:28:13-37
+228            android:permission="android.permission.BIND_JOB_SERVICE" >
+228-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:29:13-69
+229        </service>
+230
+231        <receiver
+231-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:32:9-34:40
+232            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+232-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:33:13-132
+233            android:exported="false" />
+233-->[com.google.android.datatransport:transport-runtime:3.1.9] /Users/lewinmuzvonda/.gradle/caches/transforms-3/f5f90e60379587ee4c03021808a245c2/transformed/jetified-transport-runtime-3.1.9/AndroidManifest.xml:34:13-37
+234    </application>
+235
+236</manifest>
